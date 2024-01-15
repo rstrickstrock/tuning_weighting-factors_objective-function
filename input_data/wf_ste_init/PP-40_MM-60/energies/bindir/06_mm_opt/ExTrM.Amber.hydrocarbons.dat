@@ -1,0 +1,104 @@
+ExTrM Force Field (Copyright KNK 2014)
+MASS
+DU 1.008                             Dummy atom 
+CX 12.01                             sp3 C aliphatic
+HC 1.008                             H aliph. bond. to C without electrwd. groups
+
+BOND
+CX-CX  350.0    1.522       saturated hydrocarbons
+CX-HC  450.0    1.085       saturated hydrocarbons
+
+ANGLE
+CX-CX-CX     55.0     113.85   butane, ethane, propane
+CX-CX-HC     50.0     111.25   ethane, propane
+HC-CX-HC     50.0     108.70   methane, ethane, propane
+
+DIHEDRAL
+CX-CX-CX-CX   1    0.35          0.0            -1.         SCEE=1.0 SCNB=1.0
+              1    0.00          0.0            -2.         SCEE=1.0 SCNB=1.0
+              1    0.15          0.0             3.         SCEE=1.0 SCNB=1.0
+CX-CX-CX-HC   1    0.10          0.0            -1.         SCEE=1.0 SCNB=1.0
+              1   -0.00          0.0            -2.         SCEE=1.0 SCNB=1.0
+              1    0.16          0.0             3.         SCEE=1.0 SCNB=1.0
+HC-CX-CX-HC   1    0.35          0.0            -1.         SCEE=1.0 SCNB=1.0
+              1   -0.00          0.0            -2.         SCEE=1.0 SCNB=1.0
+              1    0.13          0.0             3.         SCEE=1.0 SCNB=1.0
+
+IMPROPER
+DU-DU-DU-DU         10.0         180.          2.           Dummy atom improper torsion
+
+NONBON
+  CX          X_1  X_3             OPLS Paper = 1.9643, 0.066, 0.19643, 0.27633
+  HC          X_2  X_4             OPLS Paper = 1.4031, 0.030, 0.14031, 0.1256
+
+END
+END
+
+Notes:  This force field my be employed independently for simulating aldehydes, ester, and
+alkenes or in conjunction with Glycam06 without introducing any conflict. Remaining 
+consistent with Glycam06, SCEE & SCNB = 1.0. This is in contrast to "standard" AMBER, in which
+it is normal to set SCEE=1.2 and SCNB=2.0.
+
+Read the parameters by placing the middle atom, or two atoms in the case of torsions,
+then the first atom, and finally the last atom in alphabetical order.
+
+Terms with V4 or V6 included:
+CP-C2-N -CP, CP-C2-N -H CP-CX-NT-H
+
+ExTrM Contributors include:
+Karl N. Kirschner
+
+
+[BODNS]
+OPLS: CT    CT      1    0.15290   224262.4   ; CHARMM 22 parameter file
+THIS: CT    CT      1    0.15350   253630.0   ; converted via acpype
+
+OPLS: CT    HC      1    0.10900   284512.0   ; CHARMM 22 parameter file
+THIS: CT    HC      1    0.10920   282250.0   ; converted via acpype
+
+[ANGLES]
+OPLS: CT     CT     CT      1   112.700    488.273   ; CHARMM 22 parameter file
+THIS: CT     CT     CT      1   110.630    528.940   ; converted via acpype
+
+OPLS: CT     CT     HC      1   110.700    313.800   ; CHARMM 22 parameter file
+THIS: CT     CT     HC      1   110.050    338.020   ; converted via acpype
+
+OPLS: HC     CT     HC      1   107.800    276.144   ; CHARMM 22 parameter file
+THIS: HC     CT     HC      1   108.350    329.950   ; converted via acpype
+
+
+[DIHEDRALS]
+OPLS: CT     CT     CT     CT      3      2.92880  -1.46440   0.20920  -1.67360   0.00000   0.00000 ; hydrocarbon all-atom
+THIS: CT     CT     CT     CT      3      0.25000   0.05000   0.00000  -0.30000   0.00000   0.00000 ; dont know if this is correct
+
+THIS: converted to "func 9" (multiple proper torsions); not comparable?
+;    i      j      k      l   func     phase  kd        pn
+     1      9     15     18      9     0.00   0.48074   3 ;     C1-    C9-   C15-   C18
+     1      9     15     18      9     0.00   0.51589   2 ;     C1-    C9-   C15-   C18
+     1      9     15     18      9     0.00   0.90793   5 ;     C1-    C9-   C15-   C18
+     1      9     15     18      9     0.00  -0.92006   4 ;     C1-    C9-   C15-   C18
+     1      9     15     18      9     0.00  -1.30206   1 ;     C1-    C9-   C15-   C18
+
+
+OPLS: CT     CT     CT     HC      3      0.62760   1.88280   0.00000  -2.51040   0.00000   0.00000 ; hydrocarbon all-atom
+THIS: CT     CT     CT     HC      3      0.13000   0.19000   0.00000  -0.32000   0.00000   0.00000 ; dont know if this is correct
+
+THIS:
+;    i      j      k      l   func     phase  kd        pn
+     1      9     15     16      9     0.00   0.00000   0 ;     C1-    C9-   C15-   H16
+     1      9     15     16      9     0.00   0.00000   0 ;     C1-    C9-   C15-   H16
+     1      9     15     16      9     0.00   0.66944   3 ;     C1-    C9-   C15-   H16
+
+
+
+
+
+OPLS: HC     CT     CT     HC      3      0.62760   1.88280   0.00000  -2.51040   0.00000   0.00000 ; hydrocarbon *new* 11/99
+THIS: HC     CT     CT     HC      3      0.24000   0.02000   0.00000  -0.26000   0.00000   0.00000 ; dont know if this is correct
+
+THIS: 
+;    i      j      k      l   func     phase  kd        pn
+     2      1      9     10      9     0.00   0.00000   0 ;     H2-    C1-    C9-   H10
+     2      1      9     10      9     0.00   0.00000   0 ;     H2-    C1-    C9-   H10
+     2      1      9     10      9     0.00   0.62760   3 ;     H2-    C1-    C9-   H10
+
