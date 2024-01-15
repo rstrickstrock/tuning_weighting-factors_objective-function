@@ -1,0 +1,21 @@
+WOLF2PACK supplmentary dervied parameters for the ExTrM force field.
+MASS
+DU 1.008         0.616               Dummy atom
+
+BOND
+DU-DU  345.8    1.086       Dummy atom bond
+
+ANGLE
+DU-DU-DU   100.0      104.52    Dummy atom angle
+
+DIHEDRAL
+DU-DU-DU-DU   1    0.00          0.0            -1.         Dummy atom torsion
+              1    0.00          0.0            -2.
+              1    0.00          0.0             3.
+
+IMPROPER
+DU-DU-DU-DU         10.0         180.          2.           Dummy atom improper torsion
+
+NONBON
+   DU          0.6000  0.0157             Dummy atom Lennard-Jones
+

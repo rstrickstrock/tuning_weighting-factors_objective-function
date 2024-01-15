@@ -1,0 +1,1504 @@
+##################################
+# Starting Optimization Workflow #
+##################################
+Verbose =  False #
+Debug =  True #
+Config File = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/octane_hybrid_new.cfg #
+Grow.__init__(): self.__config_file = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/octane_hybrid_new.cfg
+current working directory = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85 #
+Grow.__init__(): current working directory basedir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85
+Grow.__init__(): self.__working_directories = []
+Grow.__init__(): self.__initial_guess = None
+Grow.__init__(): self.__dimension = None
+Grow.__init__(): self.__min_ffparameter_values = None
+Grow.__init__(): self.__max_ffparameter_values = None
+######################
+Starting optimization#
+
+Grow.run(): config = <lib.configparser.ConfigParser object at 0x7f9b1234fac8>
+Grow.run(): objective_function = PhysProp_QMMM_Loss
+Grow.run(): added working directory: /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp
+Grow.run(): added working directory: /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM
+Grow.run(): self.__working_directories = ['/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM']
+Grow.run(): parameter_file = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/parameters.par
+Grow.run(): parameter file = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/parameters.par
+Grow.run(): initial guess = [0.2, 0.182, 0.657, 0.08]
+Grow.run(): dimension = 4
+	LossFunction.__init__(): self.__verbose = False
+	LossFunction.__init__(): self.__debug = True
+	LossFunction.__init__(): self.__dimension = 4
+	LossFunction.__init__(): self.__objective_function = PhysProp_QMMM_Loss
+	LossFunction.__init__(): self.__current_working_directory_basedir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85
+	LossFunction.__init__(): self.__config = <lib.configparser.ConfigParser object at 0x7f9b1234fac8>
+	LossFunction.__init__(): self.__loss_value_normalization = True
+		Loss.__init__(): self.__verbose = False
+		Loss.__init__(): self.__debug = True
+		Loss.__init__(): self.__dimension = 4
+		Loss.__init__(): self.__gradients_of_estimations = []
+	LossFunction.__init__(): sections = ['SYS', 'OPT', 'PhysProp', 'QMMM']
+	LossFunction._init_targets(): target_file = octane_density.target
+	LossFunction._init_targets(): target_file = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/octane_density.target
+	LossFunction._init_targets(): targets = [700.0]
+	LossFunction._init_targets(): following target values from section 'PhysProp' appended to target value list: [700.0]
+	LossFunction._init_weights(): wghts = 0.288
+	LossFunction._init_weights(): wghts = ['0.288']
+	LossFunction._init_weights(): weights = [0.288]
+	LossFunction._init_weights(): number_of_weights = 1
+	LossFunction._init_weights(): number_of_targets = 1
+	LossFunction._init_weights(): final_weights = [0.288]
+	LossFunction._init_weights(): following weights from section 'PhysProp' appended to list of weights: [0.288]
+	LossFunction._init_targets(): target_file = octane_molecule_target_energies.target
+	LossFunction._init_targets(): target_file = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/octane_molecule_target_energies.target
+	LossFunction._init_targets(): targets = [0.0, 0.491, 0.746, 0.542, 1.195, 1.17, 1.057, 1.183, 1.084, 1.261, 1.089, 0.679, 1.27, 0.929, 1.257, 1.128, 1.047, 1.37, 1.368, 1.181, 0.888, 2.381, 1.011, 1.421, 1.611, 1.699, 2.412, 2.669, 1.531, 2.608, 3.153, 2.923, 1.876, 3.011, 3.129, 2.963, 3.588, 3.323, 3.093, 3.101, 2.959, 3.153, 3.193, 1.466, 3.375, 3.443, 2.531, 3.021, 2.664, 2.487, 1.644, 3.614, 3.736, 3.296, 3.101, 3.34, 3.018, 4.33, 3.619, 3.555, 3.337, 4.995, 3.039, 3.671, 3.102, 4.854, 5.496, 5.188, 5.496, 4.887, 4.934, 5.681, 3.141, 5.304, 4.871, 0.518, 1.012, 2.98, 3.083, 3.129, 3.031, 3.043, 3.643, 3.436, 3.915, 4.501, 3.977, 5.306, 5.219, 5.197, 5.25, 5.777, 5.772, 6.667, 5.641, 7.791]
+	LossFunction._init_targets(): following target values from section 'QMMM' appended to target value list: [0.0, 0.491, 0.746, 0.542, 1.195, 1.17, 1.057, 1.183, 1.084, 1.261, 1.089, 0.679, 1.27, 0.929, 1.257, 1.128, 1.047, 1.37, 1.368, 1.181, 0.888, 2.381, 1.011, 1.421, 1.611, 1.699, 2.412, 2.669, 1.531, 2.608, 3.153, 2.923, 1.876, 3.011, 3.129, 2.963, 3.588, 3.323, 3.093, 3.101, 2.959, 3.153, 3.193, 1.466, 3.375, 3.443, 2.531, 3.021, 2.664, 2.487, 1.644, 3.614, 3.736, 3.296, 3.101, 3.34, 3.018, 4.33, 3.619, 3.555, 3.337, 4.995, 3.039, 3.671, 3.102, 4.854, 5.496, 5.188, 5.496, 4.887, 4.934, 5.681, 3.141, 5.304, 4.871, 0.518, 1.012, 2.98, 3.083, 3.129, 3.031, 3.043, 3.643, 3.436, 3.915, 4.501, 3.977, 5.306, 5.219, 5.197, 5.25, 5.777, 5.772, 6.667, 5.641, 7.791]
+	LossFunction._init_weights(): wghts = 0 0.0272 0.0272 0.01133333 0.0272 0.02493333 0.0272 0.02266667 0.02493333 0.02266667 0.01133333 0.02493333 0.02493333 0.02493333 0.02493333 0.02493333 0.02493333 0.02266667 0.02493333 0.02493333 0.02493333 0.02493333 0.02493333 0.02493333 0.02493333 0.02266667 0.01586667 0.02266667 0.02266667 0.01586667 0.02266667 0.01813333 0.02266667 0.02266667 0.01586667 0.01586667 0.02266667 0.01586667 0.02266667 0.0204 0.01813333 0.01813333 0.00906667 0.01813333 0.01586667 0.01586667 0.00906667 0.01586667 0.00906667 0.00906667 0.01813333 0.01813333 0.01586667 0.01586667 0.01813333 0.00906667 0.0136 0.0204 0.01813333 0.01586667 0.01586667 0.01813333 0.01586667 0.01586667 0.01586667 0.00906667 0.01586667 0.01586667 0.01813333 0.01586667 0.01586667 0.00906667 0.01586667 0.01586667 0.00906667 0.00906667 0.01586667 0.00906667 0.01586667 0.0136 0.0136 0.0136 0.01586667 0.01586667 0.0068 0.0068 0.0068 0.0136 0.00906667 0.01586667 0.0136 0.00453333 0.0136 0.0068 0.0068 0.0068
+	LossFunction._init_weights(): wghts = ['0', '0.0272', '0.0272', '0.01133333', '0.0272', '0.02493333', '0.0272', '0.02266667', '0.02493333', '0.02266667', '0.01133333', '0.02493333', '0.02493333', '0.02493333', '0.02493333', '0.02493333', '0.02493333', '0.02266667', '0.02493333', '0.02493333', '0.02493333', '0.02493333', '0.02493333', '0.02493333', '0.02493333', '0.02266667', '0.01586667', '0.02266667', '0.02266667', '0.01586667', '0.02266667', '0.01813333', '0.02266667', '0.02266667', '0.01586667', '0.01586667', '0.02266667', '0.01586667', '0.02266667', '0.0204', '0.01813333', '0.01813333', '0.00906667', '0.01813333', '0.01586667', '0.01586667', '0.00906667', '0.01586667', '0.00906667', '0.00906667', '0.01813333', '0.01813333', '0.01586667', '0.01586667', '0.01813333', '0.00906667', '0.0136', '0.0204', '0.01813333', '0.01586667', '0.01586667', '0.01813333', '0.01586667', '0.01586667', '0.01586667', '0.00906667', '0.01586667', '0.01586667', '0.01813333', '0.01586667', '0.01586667', '0.00906667', '0.01586667', '0.01586667', '0.00906667', '0.00906667', '0.01586667', '0.00906667', '0.01586667', '0.0136', '0.0136', '0.0136', '0.01586667', '0.01586667', '0.0068', '0.0068', '0.0068', '0.0136', '0.00906667', '0.01586667', '0.0136', '0.00453333', '0.0136', '0.0068', '0.0068', '0.0068']
+	LossFunction._init_weights(): weights = [0.0, 0.0272, 0.0272, 0.01133333, 0.0272, 0.02493333, 0.0272, 0.02266667, 0.02493333, 0.02266667, 0.01133333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02266667, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02266667, 0.01586667, 0.02266667, 0.02266667, 0.01586667, 0.02266667, 0.01813333, 0.02266667, 0.02266667, 0.01586667, 0.01586667, 0.02266667, 0.01586667, 0.02266667, 0.0204, 0.01813333, 0.01813333, 0.00906667, 0.01813333, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.00906667, 0.00906667, 0.01813333, 0.01813333, 0.01586667, 0.01586667, 0.01813333, 0.00906667, 0.0136, 0.0204, 0.01813333, 0.01586667, 0.01586667, 0.01813333, 0.01586667, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.01586667, 0.01813333, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.01586667, 0.00906667, 0.00906667, 0.01586667, 0.00906667, 0.01586667, 0.0136, 0.0136, 0.0136, 0.01586667, 0.01586667, 0.0068, 0.0068, 0.0068, 0.0136, 0.00906667, 0.01586667, 0.0136, 0.00453333, 0.0136, 0.0068, 0.0068, 0.0068]
+	LossFunction._init_weights(): number_of_weights = 96
+	LossFunction._init_weights(): number_of_targets = 96
+	LossFunction._init_weights(): final_weights = [0.0, 0.0272, 0.0272, 0.01133333, 0.0272, 0.02493333, 0.0272, 0.02266667, 0.02493333, 0.02266667, 0.01133333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02266667, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02266667, 0.01586667, 0.02266667, 0.02266667, 0.01586667, 0.02266667, 0.01813333, 0.02266667, 0.02266667, 0.01586667, 0.01586667, 0.02266667, 0.01586667, 0.02266667, 0.0204, 0.01813333, 0.01813333, 0.00906667, 0.01813333, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.00906667, 0.00906667, 0.01813333, 0.01813333, 0.01586667, 0.01586667, 0.01813333, 0.00906667, 0.0136, 0.0204, 0.01813333, 0.01586667, 0.01586667, 0.01813333, 0.01586667, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.01586667, 0.01813333, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.01586667, 0.00906667, 0.00906667, 0.01586667, 0.00906667, 0.01586667, 0.0136, 0.0136, 0.0136, 0.01586667, 0.01586667, 0.0068, 0.0068, 0.0068, 0.0136, 0.00906667, 0.01586667, 0.0136, 0.00453333, 0.0136, 0.0068, 0.0068, 0.0068]
+	LossFunction._init_weights(): following weights from section 'QMMM' appended to list of weights: [0.0, 0.0272, 0.0272, 0.01133333, 0.0272, 0.02493333, 0.0272, 0.02266667, 0.02493333, 0.02266667, 0.01133333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02266667, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02266667, 0.01586667, 0.02266667, 0.02266667, 0.01586667, 0.02266667, 0.01813333, 0.02266667, 0.02266667, 0.01586667, 0.01586667, 0.02266667, 0.01586667, 0.02266667, 0.0204, 0.01813333, 0.01813333, 0.00906667, 0.01813333, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.00906667, 0.00906667, 0.01813333, 0.01813333, 0.01586667, 0.01586667, 0.01813333, 0.00906667, 0.0136, 0.0204, 0.01813333, 0.01586667, 0.01586667, 0.01813333, 0.01586667, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.01586667, 0.01813333, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.01586667, 0.00906667, 0.00906667, 0.01586667, 0.00906667, 0.01586667, 0.0136, 0.0136, 0.0136, 0.01586667, 0.01586667, 0.0068, 0.0068, 0.0068, 0.0136, 0.00906667, 0.01586667, 0.0136, 0.00453333, 0.0136, 0.0068, 0.0068, 0.0068]
+	LossFunction.__init__(): targets initialized: [[700.0], [0.0, 0.491, 0.746, 0.542, 1.195, 1.17, 1.057, 1.183, 1.084, 1.261, 1.089, 0.679, 1.27, 0.929, 1.257, 1.128, 1.047, 1.37, 1.368, 1.181, 0.888, 2.381, 1.011, 1.421, 1.611, 1.699, 2.412, 2.669, 1.531, 2.608, 3.153, 2.923, 1.876, 3.011, 3.129, 2.963, 3.588, 3.323, 3.093, 3.101, 2.959, 3.153, 3.193, 1.466, 3.375, 3.443, 2.531, 3.021, 2.664, 2.487, 1.644, 3.614, 3.736, 3.296, 3.101, 3.34, 3.018, 4.33, 3.619, 3.555, 3.337, 4.995, 3.039, 3.671, 3.102, 4.854, 5.496, 5.188, 5.496, 4.887, 4.934, 5.681, 3.141, 5.304, 4.871, 0.518, 1.012, 2.98, 3.083, 3.129, 3.031, 3.043, 3.643, 3.436, 3.915, 4.501, 3.977, 5.306, 5.219, 5.197, 5.25, 5.777, 5.772, 6.667, 5.641, 7.791]]
+	LossFunction.__init__(): weights initialized: [[0.288], [0.0, 0.0272, 0.0272, 0.01133333, 0.0272, 0.02493333, 0.0272, 0.02266667, 0.02493333, 0.02266667, 0.01133333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02266667, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02266667, 0.01586667, 0.02266667, 0.02266667, 0.01586667, 0.02266667, 0.01813333, 0.02266667, 0.02266667, 0.01586667, 0.01586667, 0.02266667, 0.01586667, 0.02266667, 0.0204, 0.01813333, 0.01813333, 0.00906667, 0.01813333, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.00906667, 0.00906667, 0.01813333, 0.01813333, 0.01586667, 0.01586667, 0.01813333, 0.00906667, 0.0136, 0.0204, 0.01813333, 0.01586667, 0.01586667, 0.01813333, 0.01586667, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.01586667, 0.01813333, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.01586667, 0.00906667, 0.00906667, 0.01586667, 0.00906667, 0.01586667, 0.0136, 0.0136, 0.0136, 0.01586667, 0.01586667, 0.0068, 0.0068, 0.0068, 0.0136, 0.00906667, 0.01586667, 0.0136, 0.00453333, 0.0136, 0.0068, 0.0068, 0.0068]]
+Grow.run(): loss_function = <simulation_interface.loss_function.LossFunction object at 0x7f9b1234fc88>
+Grow.run(): constraints_type = Force_Field_Constraints
+	ForceFieldConstraints.__init__(): self.__verbose = False
+	ForceFieldConstraints.__init__(): self.__debug = True
+	ForceFieldConstraints.__init__(): self.__initial_guess = [0.2, 0.182, 0.657, 0.08]
+	ForceFieldConstraints.__init__(): self.__config = <lib.configparser.ConfigParser object at 0x7f9b1234fac8>
+	ForceFieldConstraints.__number_of_parameters: self.__verbose = 4
+	ForceFieldConstraints.__init_boundary(): boundary = 80 80 80 80
+		ForceFieldConstraints.__init_boundary(): bound = 80.0
+		ForceFieldConstraints.__init_boundary(): bound = 80.0
+		ForceFieldConstraints.__init_boundary(): bound = 80.0
+		ForceFieldConstraints.__init_boundary(): bound = 80.0
+	ForceFieldConstraints.__init_boundary(): boundaries = [80.0, 80.0, 80.0, 80.0]
+	ForceFieldConstraints.__init_boundary(): number_of_boundaries = 4
+	ForceFieldConstraints.__init_boundary(): negative_parameters = False
+	ForceFieldConstraints.__init_boundary(): self.__boundaries = [80.0, 80.0, 80.0, 80.0]
+	ForceFieldConstraints.__init_boundary(): self.__negative_parameters = False
+	ForceFieldConstraints.__admissible_domain(): number_of_parameters = 4
+	ForceFieldConstraints.__admissible_domain(): number_of_boundaries = 4
+		ForceFieldConstraints.__admissible_domain(): factor = 0.8
+		ForceFieldConstraints.__admissible_domain(): lower_parameter = 0.03999999999999998
+		ForceFieldConstraints.__admissible_domain(): upper_parameter = 0.36000000000000004
+		ForceFieldConstraints.__admissible_domain(): factor = 0.8
+		ForceFieldConstraints.__admissible_domain(): lower_parameter = 0.03639999999999999
+		ForceFieldConstraints.__admissible_domain(): upper_parameter = 0.3276
+		ForceFieldConstraints.__admissible_domain(): factor = 0.8
+		ForceFieldConstraints.__admissible_domain(): lower_parameter = 0.13139999999999996
+		ForceFieldConstraints.__admissible_domain(): upper_parameter = 1.1826
+		ForceFieldConstraints.__admissible_domain(): factor = 0.8
+		ForceFieldConstraints.__admissible_domain(): lower_parameter = 0.016
+		ForceFieldConstraints.__admissible_domain(): upper_parameter = 0.14400000000000002
+	ForceFieldConstraints.__admissible_domain(): self.__min_ffparameter_values = [0.03999999999999998, 0.03639999999999999, 0.13139999999999996, 0.016]
+	ForceFieldConstraints.__admissible_domain(): self.__max_ffparameter_values = [0.36000000000000004, 0.3276, 1.1826, 0.14400000000000002]
+ForceFieldConstraints - parameter boundaries initialized
+	Initial guess:  [0.2, 0.182, 0.657, 0.08]
+	min parameters: [0.03999999999999998, 0.03639999999999999, 0.13139999999999996, 0.016]
+	max parameters: [0.36000000000000004, 0.3276, 1.1826, 0.14400000000000002]
+Grow.run(): constraints = <simulation_interface.force_field_constraints.ForceFieldConstraints object at 0x7f9b1234feb8>
+Grow.run(): min_max_values = [[0.03999999999999998, 0.03639999999999999, 0.13139999999999996, 0.016], [0.36000000000000004, 0.3276, 1.1826, 0.14400000000000002]]
+Grow.run(): self.__min_ffparameter_values = [0.03999999999999998, 0.03639999999999999, 0.13139999999999996, 0.016]
+Grow.run(): self.__max_ffparameter_values = [0.36000000000000004, 0.3276, 1.1826, 0.14400000000000002]
+Grow.run(): algorithm_type = steepest_descent
+	ArmijoStepLengthControl.__init__(): self.__verbose = False
+	ArmijoStepLengthControl.__init__(): self.__debug = True
+	ArmijoStepLengthControl.__init__(): self.__config = <lib.configparser.ConfigParser object at 0x7f9b1234fac8>
+	ArmijoStepLengthControl.__init__(): self.__loss_function = <simulation_interface.loss_function.LossFunction object at 0x7f9b1234fc88>
+		Simulations.__init__(): self.__verbose = False
+		Simulations.__init__(): self.__debug = True
+	ArmijoStepLengthControl.__init__(): self.__cwd = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/
+		StepLengthControl.__init__(): self.__verbose = False
+		StepLengthControl.__init__(): self.__debug = True
+		StepLengthControl.__init__(): self.__config = <lib.configparser.ConfigParser object at 0x7f9b1234fac8>
+		StepLengthControl.__init__(): self.__sl_method = armijo
+		StepLengthControl.__init__(): self.__sl_max_iterations = 25
+		StepLengthControl.__init__(): self.__initial_step_length = None
+		StepLengthControl.__init__(): self.__sl_current_iterations = 0
+	ArmijoStepLengthControl.__init__(): self.__sl_max_iterations = 25
+	ArmijoStepLengthControl.__init__(): self.__sl_method = armijo
+	ArmijoStepLengthControl.__init__(): self.__armijo_sigma = 0.2
+	ArmijoStepLengthControl.__init__(): self.__armijo_parallel_evaluations = 1
+	ArmijoStepLengthControl.__init__(): self.__initial_step_length = 0.5
+Grow.run(): step_length_control = <generic_optimizer.armijo_step_length_control.ArmijoStepLengthControl object at 0x7f9b1234ff98>
+	SteepestDescent.__init__(): self.__verbose = False
+	SteepestDescent.__init__(): self.__debug = True
+	SteepestDescent.__init__(): self.__loss_function = <simulation_interface.loss_function.LossFunction object at 0x7f9b1234fc88>
+	SteepestDescent.__init__(): self.__constraints = <simulation_interface.force_field_constraints.ForceFieldConstraints object at 0x7f9b1234feb8>
+	SteepestDescent.__init__(): self.__step_length_control = <generic_optimizer.armijo_step_length_control.ArmijoStepLengthControl object at 0x7f9b1234ff98>
+	SteepestDescent.__init__(): self.__config = <lib.configparser.ConfigParser object at 0x7f9b1234fac8>
+		OptimizationAlgorithm.__init__(): self.__verbose = False
+		OptimizationAlgorithm.__init__(): self.__debug = True
+		OptimizationAlgorithm.__init__(): self.__loss_function = <simulation_interface.loss_function.LossFunction object at 0x7f9b1234fc88>
+		OptimizationAlgorithm.__init__(): self.__constraints = <simulation_interface.force_field_constraints.ForceFieldConstraints object at 0x7f9b1234feb8>
+		OptimizationAlgorithm.__init__(): self.__step_length_control = <generic_optimizer.armijo_step_length_control.ArmijoStepLengthControl object at 0x7f9b1234ff98>
+		OptimizationAlgorithm.__init__(): self.__config = <lib.configparser.ConfigParser object at 0x7f9b1234fac8>
+		Simulations.__init__(): self.__verbose = False
+		Simulations.__init__(): self.__debug = True
+		OptimizationAlgorithm.__init__(): self.__cwd = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/
+		OptimizationAlgorithm.__init__(): self.__max_opt_iterations = 100
+		OptimizationAlgorithm.__init__(): self.__current_iteration = 0
+		OptimizationAlgorithm.__init__(): self.__x = [0.2, 0.182, 0.657, 0.08]
+		OptimizationAlgorithm.__init__(): self.__threshold = 0.001
+Grow.run(): optimization_object = <generic_optimizer.steepest_descent.SteepestDescent object at 0x7f9b12357240>
+Executing Optimization Algorithm.
+		OptimizationAlgorithm.execute_optimization(): targets = [[700.0], [0.0, 0.491, 0.746, 0.542, 1.195, 1.17, 1.057, 1.183, 1.084, 1.261, 1.089, 0.679, 1.27, 0.929, 1.257, 1.128, 1.047, 1.37, 1.368, 1.181, 0.888, 2.381, 1.011, 1.421, 1.611, 1.699, 2.412, 2.669, 1.531, 2.608, 3.153, 2.923, 1.876, 3.011, 3.129, 2.963, 3.588, 3.323, 3.093, 3.101, 2.959, 3.153, 3.193, 1.466, 3.375, 3.443, 2.531, 3.021, 2.664, 2.487, 1.644, 3.614, 3.736, 3.296, 3.101, 3.34, 3.018, 4.33, 3.619, 3.555, 3.337, 4.995, 3.039, 3.671, 3.102, 4.854, 5.496, 5.188, 5.496, 4.887, 4.934, 5.681, 3.141, 5.304, 4.871, 0.518, 1.012, 2.98, 3.083, 3.129, 3.031, 3.043, 3.643, 3.436, 3.915, 4.501, 3.977, 5.306, 5.219, 5.197, 5.25, 5.777, 5.772, 6.667, 5.641, 7.791]]
+		OptimizationAlgorithm.execute_optimization(): estimations_pp = [0.0]
+		OptimizationAlgorithm.execute_optimization(): estimations_qm = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+		OptimizationAlgorithm.execute_optimization(): estimations = [[0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]]
+	LossFunction.get_function_value(): estimations_pp = [0.0]
+	LossFunction.get_function_value(): targets_pp = [700.0]
+	LossFunction.get_function_value(): weights_pp = [0.288]
+	LossFunction.get_function_value(): estimations_qm = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+	LossFunction.get_function_value(): targets_qm = [0.0, 0.491, 0.746, 0.542, 1.195, 1.17, 1.057, 1.183, 1.084, 1.261, 1.089, 0.679, 1.27, 0.929, 1.257, 1.128, 1.047, 1.37, 1.368, 1.181, 0.888, 2.381, 1.011, 1.421, 1.611, 1.699, 2.412, 2.669, 1.531, 2.608, 3.153, 2.923, 1.876, 3.011, 3.129, 2.963, 3.588, 3.323, 3.093, 3.101, 2.959, 3.153, 3.193, 1.466, 3.375, 3.443, 2.531, 3.021, 2.664, 2.487, 1.644, 3.614, 3.736, 3.296, 3.101, 3.34, 3.018, 4.33, 3.619, 3.555, 3.337, 4.995, 3.039, 3.671, 3.102, 4.854, 5.496, 5.188, 5.496, 4.887, 4.934, 5.681, 3.141, 5.304, 4.871, 0.518, 1.012, 2.98, 3.083, 3.129, 3.031, 3.043, 3.643, 3.436, 3.915, 4.501, 3.977, 5.306, 5.219, 5.197, 5.25, 5.777, 5.772, 6.667, 5.641, 7.791]
+	LossFunction.get_function_value(): weights_qm = [0.0, 0.0272, 0.0272, 0.01133333, 0.0272, 0.02493333, 0.0272, 0.02266667, 0.02493333, 0.02266667, 0.01133333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02266667, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02493333, 0.02266667, 0.01586667, 0.02266667, 0.02266667, 0.01586667, 0.02266667, 0.01813333, 0.02266667, 0.02266667, 0.01586667, 0.01586667, 0.02266667, 0.01586667, 0.02266667, 0.0204, 0.01813333, 0.01813333, 0.00906667, 0.01813333, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.00906667, 0.00906667, 0.01813333, 0.01813333, 0.01586667, 0.01586667, 0.01813333, 0.00906667, 0.0136, 0.0204, 0.01813333, 0.01586667, 0.01586667, 0.01813333, 0.01586667, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.01586667, 0.01813333, 0.01586667, 0.01586667, 0.00906667, 0.01586667, 0.01586667, 0.00906667, 0.00906667, 0.01586667, 0.00906667, 0.01586667, 0.0136, 0.0136, 0.0136, 0.01586667, 0.01586667, 0.0068, 0.0068, 0.0068, 0.0136, 0.00906667, 0.01586667, 0.0136, 0.00453333, 0.0136, 0.0068, 0.0068, 0.0068]
+	LossFunction.get_function_value(): loss_fkt_value: 0.0 (initialized)
+	LossFunction.get_function_value(): set normalization_factor: 1000.0 (PP)
+		LossFunction.get_function_value(): 
+		loss function value = 0.0
+		i = 0
+		weights_pp[0] = 0.288
+		targets_pp[0] = 700.0
+		estimations_pp[0]: 0.0
+	LossFunction.get_function_value(): this_estimation_pp: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(0): 1.0
+			LossFunction._normalize(): normalized_value=1.0.
+		LossFunction.get_function_value(): normalized loss_value(0): 1.0
+		LossFunction.get_function_value(): loss_fkt_value: 0.288 (updated, intermediate result)
+	LossFunction.get_function_value(): set normalization_factor: 1.0 (QM)
+	LossFunction.get_function_value(): 
+		loss function value = 0.288
+		i = 0
+		weights_qm[0] = 0.0
+		targets_qm[0] = 0.0
+		estimations_qm[0] = 0.0
+"WARNING: LossFunction._get_function_value(): targets_qm[0] = 0!
+"	 targets_qm[0] set to 2.2e-12. Also added 2.2e-12 to estimations_qm[0].
+	LossFunction.get_function_value(): this_estimation_qm: 2.2e-12
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(0): 0.0
+			LossFunction._normalize(): normalized_value=0.0.
+			LossFunction.get_function_value(): normalized loss_value(0): 0.0
+	LossFunction._get_function_value(): loss_fkt_value = 0.288 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.288
+		i = 1
+		weights_qm[1] = 0.0272
+		targets_qm[1] = 0.491
+		estimations_qm[1] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(1): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(1): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.30519367920013674 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.30519367920013674
+		i = 2
+		weights_qm[2] = 0.0272
+		targets_qm[2] = 0.746
+		estimations_qm[2] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(2): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(2): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.3223873584002735 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.3223873584002735
+		i = 3
+		weights_qm[3] = 0.01133333
+		targets_qm[3] = 0.542
+		estimations_qm[3] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(3): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(3): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.32955138929326194 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.32955138929326194
+		i = 4
+		weights_qm[4] = 0.0272
+		targets_qm[4] = 1.195
+		estimations_qm[4] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(4): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(4): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.3467450684933987 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.3467450684933987
+		i = 5
+		weights_qm[5] = 0.02493333
+		targets_qm[5] = 1.17
+		estimations_qm[5] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(5): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(5): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.36250593898645556 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.36250593898645556
+		i = 6
+		weights_qm[6] = 0.0272
+		targets_qm[6] = 1.057
+		estimations_qm[6] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(6): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(6): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.3796996181865923 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.3796996181865923
+		i = 7
+		weights_qm[7] = 0.02266667
+		targets_qm[7] = 1.183
+		estimations_qm[7] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(7): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(7): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.3940276862937748 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.3940276862937748
+		i = 8
+		weights_qm[8] = 0.02493333
+		targets_qm[8] = 1.084
+		estimations_qm[8] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(8): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(8): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.4097885567868317 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.4097885567868317
+		i = 9
+		weights_qm[9] = 0.02266667
+		targets_qm[9] = 1.261
+		estimations_qm[9] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(9): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(9): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.4241166248940142 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.4241166248940142
+		i = 10
+		weights_qm[10] = 0.01133333
+		targets_qm[10] = 1.089
+		estimations_qm[10] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(10): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(10): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.43128065578700264 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.43128065578700264
+		i = 11
+		weights_qm[11] = 0.02493333
+		targets_qm[11] = 0.679
+		estimations_qm[11] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(11): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(11): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.4470415262800595 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.4470415262800595
+		i = 12
+		weights_qm[12] = 0.02493333
+		targets_qm[12] = 1.27
+		estimations_qm[12] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(12): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(12): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.46280239677311635 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.46280239677311635
+		i = 13
+		weights_qm[13] = 0.02493333
+		targets_qm[13] = 0.929
+		estimations_qm[13] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(13): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(13): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.4785632672661732 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.4785632672661732
+		i = 14
+		weights_qm[14] = 0.02493333
+		targets_qm[14] = 1.257
+		estimations_qm[14] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(14): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(14): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.49432413775923006 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.49432413775923006
+		i = 15
+		weights_qm[15] = 0.02493333
+		targets_qm[15] = 1.128
+		estimations_qm[15] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(15): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(15): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.5100850082522869 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.5100850082522869
+		i = 16
+		weights_qm[16] = 0.02493333
+		targets_qm[16] = 1.047
+		estimations_qm[16] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(16): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(16): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.5258458787453437 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.5258458787453437
+		i = 17
+		weights_qm[17] = 0.02266667
+		targets_qm[17] = 1.37
+		estimations_qm[17] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(17): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(17): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.5401739468525262 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.5401739468525262
+		i = 18
+		weights_qm[18] = 0.02493333
+		targets_qm[18] = 1.368
+		estimations_qm[18] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(18): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(18): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.555934817345583 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.555934817345583
+		i = 19
+		weights_qm[19] = 0.02493333
+		targets_qm[19] = 1.181
+		estimations_qm[19] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(19): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(19): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.5716956878386399 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.5716956878386399
+		i = 20
+		weights_qm[20] = 0.02493333
+		targets_qm[20] = 0.888
+		estimations_qm[20] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(20): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(20): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.5874565583316967 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.5874565583316967
+		i = 21
+		weights_qm[21] = 0.02493333
+		targets_qm[21] = 2.381
+		estimations_qm[21] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(21): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(21): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.6032174288247536 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.6032174288247536
+		i = 22
+		weights_qm[22] = 0.02493333
+		targets_qm[22] = 1.011
+		estimations_qm[22] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(22): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(22): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.6189782993178105 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.6189782993178105
+		i = 23
+		weights_qm[23] = 0.02493333
+		targets_qm[23] = 1.421
+		estimations_qm[23] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(23): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(23): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.6347391698108673 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.6347391698108673
+		i = 24
+		weights_qm[24] = 0.02493333
+		targets_qm[24] = 1.611
+		estimations_qm[24] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(24): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(24): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.6505000403039242 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.6505000403039242
+		i = 25
+		weights_qm[25] = 0.02266667
+		targets_qm[25] = 1.699
+		estimations_qm[25] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(25): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(25): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.6648281084111066 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.6648281084111066
+		i = 26
+		weights_qm[26] = 0.01586667
+		targets_qm[26] = 2.412
+		estimations_qm[26] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(26): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(26): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.674857756718255 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.674857756718255
+		i = 27
+		weights_qm[27] = 0.02266667
+		targets_qm[27] = 2.669
+		estimations_qm[27] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(27): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(27): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.6891858248254374 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.6891858248254374
+		i = 28
+		weights_qm[28] = 0.02266667
+		targets_qm[28] = 1.531
+		estimations_qm[28] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(28): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(28): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.7035138929326199 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.7035138929326199
+		i = 29
+		weights_qm[29] = 0.01586667
+		targets_qm[29] = 2.608
+		estimations_qm[29] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(29): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(29): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.7135435412397683 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.7135435412397683
+		i = 30
+		weights_qm[30] = 0.02266667
+		targets_qm[30] = 3.153
+		estimations_qm[30] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(30): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(30): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.7278716093469507 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.7278716093469507
+		i = 31
+		weights_qm[31] = 0.01813333
+		targets_qm[31] = 2.923
+		estimations_qm[31] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(31): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(31): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.7393340600399734 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.7393340600399734
+		i = 32
+		weights_qm[32] = 0.02266667
+		targets_qm[32] = 1.876
+		estimations_qm[32] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(32): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(32): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.7536621281471558 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.7536621281471558
+		i = 33
+		weights_qm[33] = 0.02266667
+		targets_qm[33] = 3.011
+		estimations_qm[33] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(33): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(33): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.7679901962543383 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.7679901962543383
+		i = 34
+		weights_qm[34] = 0.01586667
+		targets_qm[34] = 3.129
+		estimations_qm[34] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(34): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(34): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.7780198445614867 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.7780198445614867
+		i = 35
+		weights_qm[35] = 0.01586667
+		targets_qm[35] = 2.963
+		estimations_qm[35] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(35): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(35): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.788049492868635 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.788049492868635
+		i = 36
+		weights_qm[36] = 0.02266667
+		targets_qm[36] = 3.588
+		estimations_qm[36] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(36): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(36): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.8023775609758175 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.8023775609758175
+		i = 37
+		weights_qm[37] = 0.01586667
+		targets_qm[37] = 3.323
+		estimations_qm[37] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(37): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(37): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.8124072092829658 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.8124072092829658
+		i = 38
+		weights_qm[38] = 0.02266667
+		targets_qm[38] = 3.093
+		estimations_qm[38] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(38): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(38): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.8267352773901483 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.8267352773901483
+		i = 39
+		weights_qm[39] = 0.0204
+		targets_qm[39] = 3.101
+		estimations_qm[39] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(39): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(39): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.8396305367902509 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.8396305367902509
+		i = 40
+		weights_qm[40] = 0.01813333
+		targets_qm[40] = 2.959
+		estimations_qm[40] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(40): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(40): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.8510929874832736 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.8510929874832736
+		i = 41
+		weights_qm[41] = 0.01813333
+		targets_qm[41] = 3.153
+		estimations_qm[41] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(41): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(41): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.8625554381762962 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.8625554381762962
+		i = 42
+		weights_qm[42] = 0.00906667
+		targets_qm[42] = 3.193
+		estimations_qm[42] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(42): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(42): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.8682866666834104 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.8682866666834104
+		i = 43
+		weights_qm[43] = 0.01813333
+		targets_qm[43] = 1.466
+		estimations_qm[43] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(43): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(43): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.879749117376433 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.879749117376433
+		i = 44
+		weights_qm[44] = 0.01586667
+		targets_qm[44] = 3.375
+		estimations_qm[44] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(44): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(44): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.8897787656835814 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.8897787656835814
+		i = 45
+		weights_qm[45] = 0.01586667
+		targets_qm[45] = 3.443
+		estimations_qm[45] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(45): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(45): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.8998084139907297 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.8998084139907297
+		i = 46
+		weights_qm[46] = 0.00906667
+		targets_qm[46] = 2.531
+		estimations_qm[46] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(46): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(46): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9055396424978439 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9055396424978439
+		i = 47
+		weights_qm[47] = 0.01586667
+		targets_qm[47] = 3.021
+		estimations_qm[47] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(47): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(47): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9155692908049923 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9155692908049923
+		i = 48
+		weights_qm[48] = 0.00906667
+		targets_qm[48] = 2.664
+		estimations_qm[48] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(48): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(48): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9213005193121064 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9213005193121064
+		i = 49
+		weights_qm[49] = 0.00906667
+		targets_qm[49] = 2.487
+		estimations_qm[49] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(49): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(49): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9270317478192206 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9270317478192206
+		i = 50
+		weights_qm[50] = 0.01813333
+		targets_qm[50] = 1.644
+		estimations_qm[50] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(50): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(50): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9384941985122432 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9384941985122432
+		i = 51
+		weights_qm[51] = 0.01813333
+		targets_qm[51] = 3.614
+		estimations_qm[51] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(51): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(51): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9499566492052659 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9499566492052659
+		i = 52
+		weights_qm[52] = 0.01586667
+		targets_qm[52] = 3.736
+		estimations_qm[52] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(52): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(52): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9599862975124143 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9599862975124143
+		i = 53
+		weights_qm[53] = 0.01586667
+		targets_qm[53] = 3.296
+		estimations_qm[53] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(53): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(53): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9700159458195626 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9700159458195626
+		i = 54
+		weights_qm[54] = 0.01813333
+		targets_qm[54] = 3.101
+		estimations_qm[54] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(54): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(54): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9814783965125853 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9814783965125853
+		i = 55
+		weights_qm[55] = 0.00906667
+		targets_qm[55] = 3.34
+		estimations_qm[55] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(55): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(55): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9872096250196994 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9872096250196994
+		i = 56
+		weights_qm[56] = 0.0136
+		targets_qm[56] = 3.018
+		estimations_qm[56] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(56): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(56): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 0.9958064646197679 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 0.9958064646197679
+		i = 57
+		weights_qm[57] = 0.0204
+		targets_qm[57] = 4.33
+		estimations_qm[57] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(57): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(57): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.0087017240198703 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.0087017240198703
+		i = 58
+		weights_qm[58] = 0.01813333
+		targets_qm[58] = 3.619
+		estimations_qm[58] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(58): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(58): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.020164174712893 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.020164174712893
+		i = 59
+		weights_qm[59] = 0.01586667
+		targets_qm[59] = 3.555
+		estimations_qm[59] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(59): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(59): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.0301938230200411 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.0301938230200411
+		i = 60
+		weights_qm[60] = 0.01586667
+		targets_qm[60] = 3.337
+		estimations_qm[60] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(60): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(60): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.0402234713271894 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.0402234713271894
+		i = 61
+		weights_qm[61] = 0.01813333
+		targets_qm[61] = 4.995
+		estimations_qm[61] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(61): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(61): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.051685922020212 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.051685922020212
+		i = 62
+		weights_qm[62] = 0.01586667
+		targets_qm[62] = 3.039
+		estimations_qm[62] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(62): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(62): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.0617155703273602 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.0617155703273602
+		i = 63
+		weights_qm[63] = 0.01586667
+		targets_qm[63] = 3.671
+		estimations_qm[63] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(63): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(63): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.0717452186345084 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.0717452186345084
+		i = 64
+		weights_qm[64] = 0.01586667
+		targets_qm[64] = 3.102
+		estimations_qm[64] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(64): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(64): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.0817748669416567 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.0817748669416567
+		i = 65
+		weights_qm[65] = 0.00906667
+		targets_qm[65] = 4.854
+		estimations_qm[65] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(65): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(65): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.0875060954487707 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.0875060954487707
+		i = 66
+		weights_qm[66] = 0.01586667
+		targets_qm[66] = 5.496
+		estimations_qm[66] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(66): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(66): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.097535743755919 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.097535743755919
+		i = 67
+		weights_qm[67] = 0.01586667
+		targets_qm[67] = 5.188
+		estimations_qm[67] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(67): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(67): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.1075653920630673 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.1075653920630673
+		i = 68
+		weights_qm[68] = 0.01813333
+		targets_qm[68] = 5.496
+		estimations_qm[68] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(68): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(68): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.1190278427560898 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.1190278427560898
+		i = 69
+		weights_qm[69] = 0.01586667
+		targets_qm[69] = 4.887
+		estimations_qm[69] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(69): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(69): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.129057491063238 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.129057491063238
+		i = 70
+		weights_qm[70] = 0.01586667
+		targets_qm[70] = 4.934
+		estimations_qm[70] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(70): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(70): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.1390871393703863 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.1390871393703863
+		i = 71
+		weights_qm[71] = 0.00906667
+		targets_qm[71] = 5.681
+		estimations_qm[71] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(71): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(71): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.1448183678775004 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.1448183678775004
+		i = 72
+		weights_qm[72] = 0.01586667
+		targets_qm[72] = 3.141
+		estimations_qm[72] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(72): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(72): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.1548480161846486 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.1548480161846486
+		i = 73
+		weights_qm[73] = 0.01586667
+		targets_qm[73] = 5.304
+		estimations_qm[73] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(73): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(73): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.1648776644917969 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.1648776644917969
+		i = 74
+		weights_qm[74] = 0.00906667
+		targets_qm[74] = 4.871
+		estimations_qm[74] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(74): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(74): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.170608892998911 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.170608892998911
+		i = 75
+		weights_qm[75] = 0.00906667
+		targets_qm[75] = 0.518
+		estimations_qm[75] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(75): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(75): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.176340121506025 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.176340121506025
+		i = 76
+		weights_qm[76] = 0.01586667
+		targets_qm[76] = 1.012
+		estimations_qm[76] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(76): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(76): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.1863697698131732 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.1863697698131732
+		i = 77
+		weights_qm[77] = 0.00906667
+		targets_qm[77] = 2.98
+		estimations_qm[77] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(77): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(77): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.1921009983202873 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.1921009983202873
+		i = 78
+		weights_qm[78] = 0.01586667
+		targets_qm[78] = 3.083
+		estimations_qm[78] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(78): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(78): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2021306466274355 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2021306466274355
+		i = 79
+		weights_qm[79] = 0.0136
+		targets_qm[79] = 3.129
+		estimations_qm[79] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(79): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(79): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.210727486227504 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.210727486227504
+		i = 80
+		weights_qm[80] = 0.0136
+		targets_qm[80] = 3.031
+		estimations_qm[80] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(80): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(80): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2193243258275723 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2193243258275723
+		i = 81
+		weights_qm[81] = 0.0136
+		targets_qm[81] = 3.043
+		estimations_qm[81] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(81): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(81): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2279211654276407 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2279211654276407
+		i = 82
+		weights_qm[82] = 0.01586667
+		targets_qm[82] = 3.643
+		estimations_qm[82] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(82): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(82): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.237950813734789 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.237950813734789
+		i = 83
+		weights_qm[83] = 0.01586667
+		targets_qm[83] = 3.436
+		estimations_qm[83] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(83): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(83): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2479804620419372 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2479804620419372
+		i = 84
+		weights_qm[84] = 0.0068
+		targets_qm[84] = 3.915
+		estimations_qm[84] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(84): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(84): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2522788818419714 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2522788818419714
+		i = 85
+		weights_qm[85] = 0.0068
+		targets_qm[85] = 4.501
+		estimations_qm[85] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(85): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(85): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2565773016420057 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2565773016420057
+		i = 86
+		weights_qm[86] = 0.0068
+		targets_qm[86] = 3.977
+		estimations_qm[86] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(86): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(86): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2608757214420399 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2608757214420399
+		i = 87
+		weights_qm[87] = 0.0136
+		targets_qm[87] = 5.306
+		estimations_qm[87] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(87): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(87): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2694725610421083 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2694725610421083
+		i = 88
+		weights_qm[88] = 0.00906667
+		targets_qm[88] = 5.219
+		estimations_qm[88] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(88): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(88): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2752037895492223 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2752037895492223
+		i = 89
+		weights_qm[89] = 0.01586667
+		targets_qm[89] = 5.197
+		estimations_qm[89] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(89): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(89): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2852334378563706 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2852334378563706
+		i = 90
+		weights_qm[90] = 0.0136
+		targets_qm[90] = 5.25
+		estimations_qm[90] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(90): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(90): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.293830277456439 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.293830277456439
+		i = 91
+		weights_qm[91] = 0.00453333
+		targets_qm[91] = 5.777
+		estimations_qm[91] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(91): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(91): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.2966958885493933 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.2966958885493933
+		i = 92
+		weights_qm[92] = 0.0136
+		targets_qm[92] = 5.772
+		estimations_qm[92] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(92): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(92): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.3052927281494617 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.3052927281494617
+		i = 93
+		weights_qm[93] = 0.0068
+		targets_qm[93] = 6.667
+		estimations_qm[93] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(93): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(93): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.309591147949496 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.309591147949496
+		i = 94
+		weights_qm[94] = 0.0068
+		targets_qm[94] = 5.641
+		estimations_qm[94] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(94): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(94): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.3138895677495301 (updated, intermediate result)
+	LossFunction.get_function_value(): 
+		loss function value = 1.3138895677495301
+		i = 95
+		weights_qm[95] = 0.0068
+		targets_qm[95] = 7.791
+		estimations_qm[95] = 0.0
+	LossFunction.get_function_value(): this_estimation_qm: 0.0
+	LossFunction.get_function_value(): loss_value = 0.0 (initialized).
+		LossFunction.get_function_value(): loss_value(95): 1.0
+			LossFunction._normalize(): normalized_value=0.6321205588285577.
+			LossFunction.get_function_value(): normalized loss_value(95): 0.6321205588285577
+	LossFunction._get_function_value(): loss_fkt_value = 1.3181879875495643 (updated, intermediate result)
+	LossFunction.get_function_value(): loss_fkt_value = 1.3181879875495643
+		OptimizationAlgorithm.execute_optimization(): loss_value = 1.3181879875495643
+			OptimizationAlgorithm.execute_optimization(): self.__current_iteration = 1
+Starting optimization step 1
+Executing optimization Step 1
+Getting gradient.
+		OptimizationAlgorithm.get_gradient(): dimension = 4
+			OptimizationAlgorithm.get_gradient(): direction_parameter_set = [0.21000000000000002, 0.182, 0.657, 0.08]
+			OptimizationAlgorithm.get_gradient(): direction_parameter_set = [0.2, 0.192, 0.657, 0.08]
+			OptimizationAlgorithm.get_gradient(): direction_parameter_set = [0.2, 0.182, 0.667, 0.08]
+			OptimizationAlgorithm.get_gradient(): direction_parameter_set = [0.2, 0.182, 0.657, 0.09]
+		OptimizationAlgorithm.get_gradient(): gradient_parameter_sets = [[0.21000000000000002, 0.182, 0.657, 0.08], [0.2, 0.192, 0.657, 0.08], [0.2, 0.182, 0.667, 0.08], [0.2, 0.182, 0.657, 0.09]]
+		OptimizationAlgorithm.get_gradient(): steering_script_pp = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh
+		OptimizationAlgorithm.get_gradient(): simulation_cwd_pp = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp
+		Simulations.create_execute_simulation_command(): command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', 'g', '1', '0', '0.2', '0.182', '0.657', '0.08']
+		Simulations.create_execute_simulation_command(): simulation_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.0
+		OptimizationAlgorithm.get_gradient(): execute_sim_command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', 'g', '1', '0', '0.2', '0.182', '0.657', '0.08']
+		OptimizationAlgorithm.get_gradient(): sim_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.0
+		OptimizationAlgorithm.get_gradient(): sim_pp = <subprocess.Popen object at 0x7f9b12357320>
+		OptimizationAlgorithm.get_gradient(): sim_stdout = b'Submitted batch job 961718\n'
+		Simulations.get_job_id(): job_id = [961718]
+		OptimizationAlgorithm.get_gradient(): batch_job_id = 961718
+		OptimizationAlgorithm.get_gradient(): Submitted batch job 961718
+		Simulations.create_execute_simulation_command(): command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', 'g', '1', '1', '0.21000000000000002', '0.182', '0.657', '0.08']
+		Simulations.create_execute_simulation_command(): simulation_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.1
+			OptimizationAlgorithm.get_gradient(): execute_sim_command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', 'g', '1', '1', '0.21000000000000002', '0.182', '0.657', '0.08']
+			OptimizationAlgorithm.get_gradient(): sim_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.1
+			OptimizationAlgorithm.get_gradient(): sim_pp = <subprocess.Popen object at 0x7f9b12357438>
+			OptimizationAlgorithm.get_gradient(): sim_stdout = b'Submitted batch job 961731\n'
+		Simulations.get_job_id(): job_id = [961731]
+			OptimizationAlgorithm.get_gradient(): batch_job_id = 961731
+			OptimizationAlgorithm.get_gradient(): Submitted batch job 961731
+		Simulations.create_execute_simulation_command(): command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', 'g', '1', '2', '0.2', '0.192', '0.657', '0.08']
+		Simulations.create_execute_simulation_command(): simulation_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.2
+			OptimizationAlgorithm.get_gradient(): execute_sim_command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', 'g', '1', '2', '0.2', '0.192', '0.657', '0.08']
+			OptimizationAlgorithm.get_gradient(): sim_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.2
+			OptimizationAlgorithm.get_gradient(): sim_pp = <subprocess.Popen object at 0x7f9b12357208>
+			OptimizationAlgorithm.get_gradient(): sim_stdout = b'Submitted batch job 961750\n'
+		Simulations.get_job_id(): job_id = [961750]
+			OptimizationAlgorithm.get_gradient(): batch_job_id = 961750
+			OptimizationAlgorithm.get_gradient(): Submitted batch job 961750
+		Simulations.create_execute_simulation_command(): command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', 'g', '1', '3', '0.2', '0.182', '0.667', '0.08']
+		Simulations.create_execute_simulation_command(): simulation_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.3
+			OptimizationAlgorithm.get_gradient(): execute_sim_command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', 'g', '1', '3', '0.2', '0.182', '0.667', '0.08']
+			OptimizationAlgorithm.get_gradient(): sim_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.3
+			OptimizationAlgorithm.get_gradient(): sim_pp = <subprocess.Popen object at 0x7f9b12357438>
+			OptimizationAlgorithm.get_gradient(): sim_stdout = b'Submitted batch job 961792\n'
+		Simulations.get_job_id(): job_id = [961792]
+			OptimizationAlgorithm.get_gradient(): batch_job_id = 961792
+			OptimizationAlgorithm.get_gradient(): Submitted batch job 961792
+		Simulations.create_execute_simulation_command(): command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', 'g', '1', '4', '0.2', '0.182', '0.657', '0.09']
+		Simulations.create_execute_simulation_command(): simulation_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.4
+			OptimizationAlgorithm.get_gradient(): execute_sim_command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/density/physprop_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp', 'g', '1', '4', '0.2', '0.182', '0.657', '0.09']
+			OptimizationAlgorithm.get_gradient(): sim_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.4
+			OptimizationAlgorithm.get_gradient(): sim_pp = <subprocess.Popen object at 0x7f9b123572e8>
+			OptimizationAlgorithm.get_gradient(): sim_stdout = b'Submitted batch job 961808\n'
+		Simulations.get_job_id(): job_id = [961808]
+			OptimizationAlgorithm.get_gradient(): batch_job_id = 961808
+			OptimizationAlgorithm.get_gradient(): Submitted batch job 961808
+		OptimizationAlgorithm.get_gradient(): steering_script_qm = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh
+		OptimizationAlgorithm.get_gradient(): simulation_cwd_qm = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM
+		Simulations.lj_parameters_gmx2amber(): is_same_length = True
+			Simulations.lj_parameters_gmx2amber(): par = 0.2
+			Simulations.lj_parameters_gmx2amber(): par = 1.12246205
+			Simulations.lj_parameters_gmx2amber(): par = 0.182
+			Simulations.lj_parameters_gmx2amber(): par = 1.0214404655
+			Simulations.lj_parameters_gmx2amber(): par = 0.657
+			Simulations.lj_parameters_gmx2amber(): par = 0.15692175408426484
+			Simulations.lj_parameters_gmx2amber(): par = 0.08
+			Simulations.lj_parameters_gmx2amber(): par = 0.019107671730199675
+		Simulations.lj_parameters_gmx2amber(): converted_parameters = [1.12246205, 1.0214404655, 0.15692175408426484, 0.019107671730199675]
+		OptimizationAlgorithm.get_gradient(): current_parameter_set_amber = [1.12246205, 1.0214404655, 0.15692175408426484, 0.019107671730199675]
+		Simulations.create_execute_simulation_command(): command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM', 'g', '1', '0', '1.12246205', '1.0214404655', '0.15692175408426484', '0.019107671730199675']
+		Simulations.create_execute_simulation_command(): simulation_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.0
+		OptimizationAlgorithm.get_gradient(): execute_sim_command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM', 'g', '1', '0', '1.12246205', '1.0214404655', '0.15692175408426484', '0.019107671730199675']
+		OptimizationAlgorithm.get_gradient(): sim_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.0
+		OptimizationAlgorithm.get_gradient(): sim_qm = <subprocess.Popen object at 0x7f9b12357438>
+		OptimizationAlgorithm.get_gradient(): sim_stdout = b'Submitted batch job 961865\n'
+		Simulations.get_job_id(): job_id = [961865]
+		OptimizationAlgorithm.get_gradient(): batch_job_id = 961865
+		OptimizationAlgorithm.get_gradient(): Submitted batch job 961865
+		Simulations.lj_parameters_gmx2amber(): is_same_length = True
+			Simulations.lj_parameters_gmx2amber(): par = 0.21000000000000002
+			Simulations.lj_parameters_gmx2amber(): par = 1.1785851525
+			Simulations.lj_parameters_gmx2amber(): par = 0.182
+			Simulations.lj_parameters_gmx2amber(): par = 1.0214404655
+			Simulations.lj_parameters_gmx2amber(): par = 0.657
+			Simulations.lj_parameters_gmx2amber(): par = 0.15692175408426484
+			Simulations.lj_parameters_gmx2amber(): par = 0.08
+			Simulations.lj_parameters_gmx2amber(): par = 0.019107671730199675
+		Simulations.lj_parameters_gmx2amber(): converted_parameters = [1.1785851525, 1.0214404655, 0.15692175408426484, 0.019107671730199675]
+			OptimizationAlgorithm.get_gradient(): current_parameter_set_amber = [1.1785851525, 1.0214404655, 0.15692175408426484, 0.019107671730199675]
+		Simulations.create_execute_simulation_command(): command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM', 'g', '1', '1', '1.1785851525', '1.0214404655', '0.15692175408426484', '0.019107671730199675']
+		Simulations.create_execute_simulation_command(): simulation_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.1
+			OptimizationAlgorithm.get_gradient(): execute_sim_command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM', 'g', '1', '1', '1.1785851525', '1.0214404655', '0.15692175408426484', '0.019107671730199675']
+			OptimizationAlgorithm.get_gradient(): sim_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.1
+			OptimizationAlgorithm.get_gradient(): sim_qm = <subprocess.Popen object at 0x7f9b12357550>
+			OptimizationAlgorithm.get_gradient(): sim_stdout = b'Submitted batch job 961873\n'
+		Simulations.get_job_id(): job_id = [961873]
+			OptimizationAlgorithm.get_gradient(): batch_job_id = 961873
+			OptimizationAlgorithm.get_gradient(): Submitted batch job 961873
+		Simulations.lj_parameters_gmx2amber(): is_same_length = True
+			Simulations.lj_parameters_gmx2amber(): par = 0.2
+			Simulations.lj_parameters_gmx2amber(): par = 1.12246205
+			Simulations.lj_parameters_gmx2amber(): par = 0.192
+			Simulations.lj_parameters_gmx2amber(): par = 1.077563568
+			Simulations.lj_parameters_gmx2amber(): par = 0.657
+			Simulations.lj_parameters_gmx2amber(): par = 0.15692175408426484
+			Simulations.lj_parameters_gmx2amber(): par = 0.08
+			Simulations.lj_parameters_gmx2amber(): par = 0.019107671730199675
+		Simulations.lj_parameters_gmx2amber(): converted_parameters = [1.12246205, 1.077563568, 0.15692175408426484, 0.019107671730199675]
+			OptimizationAlgorithm.get_gradient(): current_parameter_set_amber = [1.12246205, 1.077563568, 0.15692175408426484, 0.019107671730199675]
+		Simulations.create_execute_simulation_command(): command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM', 'g', '1', '2', '1.12246205', '1.077563568', '0.15692175408426484', '0.019107671730199675']
+		Simulations.create_execute_simulation_command(): simulation_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.2
+			OptimizationAlgorithm.get_gradient(): execute_sim_command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM', 'g', '1', '2', '1.12246205', '1.077563568', '0.15692175408426484', '0.019107671730199675']
+			OptimizationAlgorithm.get_gradient(): sim_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.2
+			OptimizationAlgorithm.get_gradient(): sim_qm = <subprocess.Popen object at 0x7f9b123576d8>
+			OptimizationAlgorithm.get_gradient(): sim_stdout = b'Submitted batch job 961901\n'
+		Simulations.get_job_id(): job_id = [961901]
+			OptimizationAlgorithm.get_gradient(): batch_job_id = 961901
+			OptimizationAlgorithm.get_gradient(): Submitted batch job 961901
+		Simulations.lj_parameters_gmx2amber(): is_same_length = True
+			Simulations.lj_parameters_gmx2amber(): par = 0.2
+			Simulations.lj_parameters_gmx2amber(): par = 1.12246205
+			Simulations.lj_parameters_gmx2amber(): par = 0.182
+			Simulations.lj_parameters_gmx2amber(): par = 1.0214404655
+			Simulations.lj_parameters_gmx2amber(): par = 0.667
+			Simulations.lj_parameters_gmx2amber(): par = 0.1593102130505398
+			Simulations.lj_parameters_gmx2amber(): par = 0.08
+			Simulations.lj_parameters_gmx2amber(): par = 0.019107671730199675
+		Simulations.lj_parameters_gmx2amber(): converted_parameters = [1.12246205, 1.0214404655, 0.1593102130505398, 0.019107671730199675]
+			OptimizationAlgorithm.get_gradient(): current_parameter_set_amber = [1.12246205, 1.0214404655, 0.1593102130505398, 0.019107671730199675]
+		Simulations.create_execute_simulation_command(): command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM', 'g', '1', '3', '1.12246205', '1.0214404655', '0.1593102130505398', '0.019107671730199675']
+		Simulations.create_execute_simulation_command(): simulation_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.3
+			OptimizationAlgorithm.get_gradient(): execute_sim_command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM', 'g', '1', '3', '1.12246205', '1.0214404655', '0.1593102130505398', '0.019107671730199675']
+			OptimizationAlgorithm.get_gradient(): sim_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.3
+			OptimizationAlgorithm.get_gradient(): sim_qm = <subprocess.Popen object at 0x7f9b123574a8>
+			OptimizationAlgorithm.get_gradient(): sim_stdout = b'Submitted batch job 961917\n'
+		Simulations.get_job_id(): job_id = [961917]
+			OptimizationAlgorithm.get_gradient(): batch_job_id = 961917
+			OptimizationAlgorithm.get_gradient(): Submitted batch job 961917
+		Simulations.lj_parameters_gmx2amber(): is_same_length = True
+			Simulations.lj_parameters_gmx2amber(): par = 0.2
+			Simulations.lj_parameters_gmx2amber(): par = 1.12246205
+			Simulations.lj_parameters_gmx2amber(): par = 0.182
+			Simulations.lj_parameters_gmx2amber(): par = 1.0214404655
+			Simulations.lj_parameters_gmx2amber(): par = 0.657
+			Simulations.lj_parameters_gmx2amber(): par = 0.15692175408426484
+			Simulations.lj_parameters_gmx2amber(): par = 0.09
+			Simulations.lj_parameters_gmx2amber(): par = 0.021496130696474634
+		Simulations.lj_parameters_gmx2amber(): converted_parameters = [1.12246205, 1.0214404655, 0.15692175408426484, 0.021496130696474634]
+			OptimizationAlgorithm.get_gradient(): current_parameter_set_amber = [1.12246205, 1.0214404655, 0.15692175408426484, 0.021496130696474634]
+		Simulations.create_execute_simulation_command(): command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM', 'g', '1', '4', '1.12246205', '1.0214404655', '0.15692175408426484', '0.021496130696474634']
+		Simulations.create_execute_simulation_command(): simulation_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.4
+			OptimizationAlgorithm.get_gradient(): execute_sim_command = ['sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/energies/qmmm_steering.sh', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM', 'g', '1', '4', '1.12246205', '1.0214404655', '0.15692175408426484', '0.021496130696474634']
+			OptimizationAlgorithm.get_gradient(): sim_results_dir = /home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.4
+			OptimizationAlgorithm.get_gradient(): sim_qm = <subprocess.Popen object at 0x7f9b12357438>
+			OptimizationAlgorithm.get_gradient(): sim_stdout = b'Submitted batch job 961936\n'
+		Simulations.get_job_id(): job_id = [961936]
+			OptimizationAlgorithm.get_gradient(): batch_job_id = 961936
+			OptimizationAlgorithm.get_gradient(): Submitted batch job 961936
+		OptimizationAlgorithm.get_gradient(): JobIDs = [961718, 961731, 961750, 961792, 961808, 961865, 961873, 961901, 961917, 961936]
+		OptimizationAlgorithm.get_gradient(): sim_results_dirs_pp = ['/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.0', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.1', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.2', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.3', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/PhysProp/g.1.4']
+		OptimizationAlgorithm.get_gradient(): sim_results_dirs_qm = ['/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.0', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.1', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.2', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.3', '/home/rstric2s/current_sim/Paper_Octane-2/study_weighting-factors_steps_normalized/PP-15_MM-85/QMMM/g.1.4']
+		Simulations.wait_for_slurm_cluster_jobs(): check_interval_time = 30.0
+			Simulations.wait_for_slurm_cluster_jobs(): ID = 961718
+			Simulations.wait_for_slurm_cluster_jobs(): check_job_status = b'             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n            961718      hpc3  density rstric2s  R       0:38      1 wr56\n'
+Some jobs are still running. Next check in 30.0s.
+			Simulations.wait_for_slurm_cluster_jobs(): ID = 961718
+			Simulations.wait_for_slurm_cluster_jobs(): check_job_status = b'             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n            961718      hpc3  density rstric2s  R       1:08      1 wr56\n'
+Some jobs are still running. Next check in 30.0s.
+			Simulations.wait_for_slurm_cluster_jobs(): ID = 961718
+			Simulations.wait_for_slurm_cluster_jobs(): check_job_status = b'             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n            961718      hpc3  density rstric2s  R       1:38      1 wr56\n'
+Some jobs are still running. Next check in 30.0s.
+			Simulations.wait_for_slurm_cluster_jobs(): ID = 961718
+			Simulations.wait_for_slurm_cluster_jobs(): check_job_status = b'             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n            961718      hpc3  density rstric2s  R       2:08      1 wr56\n'
+Some jobs are still running. Next check in 30.0s.
+			Simulations.wait_for_slurm_cluster_jobs(): ID = 961718
+			Simulations.wait_for_slurm_cluster_jobs(): check_job_status = b'             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n            961718      hpc3  density rstric2s  R       2:38      1 wr56\n'
+Some jobs are still running. Next check in 30.0s.

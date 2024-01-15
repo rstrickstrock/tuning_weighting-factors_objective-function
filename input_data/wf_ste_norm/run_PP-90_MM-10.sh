@@ -1,0 +1,14 @@
+#! /bin/bash
+cwd="ABS-PATH-TO/PP-90_MM-10"
+if [[ -d $cwd/PhysProp ]]; then
+  rm -rf $cwd/PhysProp
+fi
+if [[ -d $cwd/QMMM ]]; then
+  rm -rf $cwd/QMMM
+fi
+rm $cwd/PP-90_MM-10.log
+
+
+miscffoptiw="python ../../FFLOW//main.py"
+
+$miscffoptiw $cwd/octane_hybrid_new.cfg -d
