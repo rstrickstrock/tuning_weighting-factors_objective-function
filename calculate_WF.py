@@ -1,3 +1,22 @@
+## python script to calculate Weighting Factors (WF) for Relative Conformational Energies (RCE). 
+
+## USEAGE: python calculate_WF.py
+##         -> follow CLI instructions
+
+## For exponentially and stepwise decreasing WF target energies are required.
+## They need to be provided in a file with one RCE (without names and units, just the value) per row.
+## e.g.:
+## 
+## $ cat TargetEnergies.txt 
+## 0.0
+## 0.491
+## 0.518
+## 0.542
+## 0.679
+## 0.746
+## 0.888
+## 0.929
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
